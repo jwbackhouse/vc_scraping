@@ -1,19 +1,12 @@
 // Set package requirements
 const fs = require('fs');
 const request = require('request');
-const  cheerio = require('cheerio');
+const cheerio = require('cheerio');
 
 // Set variables
 const d= new Date();
 const mth = parseFloat(d.getMonth()) + 1;
 const brands = require('./brands.json');
-
-
-// request('https://www.vouchercodes.co.uk/bellaitalia.co.uk', function (error, response, html) {
-//   console.log('error', error);
-//   console.log('status code:', response && response.statusCode);
-//   console.log('body:', html);
-// });
 
 // Run requests
 for (let i=0; i < brands.restaurants.length; i++) {
